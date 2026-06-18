@@ -1,0 +1,32 @@
+# Agentic Mind OS — the repo ships templates, not lived data.
+# A user's actual vault is private and lives OUTSIDE this repo (e.g. ~/mind-vault).
+# Never commit a real vault.
+
+# Personal vaults copied or symlinked in for testing
+/vault/
+/my-vault/
+/mind-vault/
+*.local.md
+
+# Obsidian working state
+.obsidian/
+.trash/
+
+# Agent runtime + secrets
+.env
+.env.*
+*.key
+.claude/settings.local.json
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# Node / tooling (if any local scripts get added)
+node_modules/
+dist/
+.cache/

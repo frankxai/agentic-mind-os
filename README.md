@@ -1,47 +1,129 @@
 # Agentic Mind OS
 
-**A local-first second brain and self-intelligence operating system for students, creators, founders, and lifelong learners.**
+[![Built on SIP](https://img.shields.io/badge/Built%20on-SIP-c9b6ff.svg)](https://github.com/frankxai/Starlight-Intelligence-System)
+[![License: MIT](https://img.shields.io/badge/License-MIT-f4c97a.svg)](LICENSE)
+[![Layer: Lived OS](https://img.shields.io/badge/layer-lived%20OS-green.svg)](https://github.com/frankxai/mind-intelligence-systems)
 
-Agentic Mind OS is the lived personal layer of Mind Intelligence Systems. It turns raw notes, sources, and reflections into a structured personal canon using agents, skills, and workflows.
+A personal, local-first mind OS you live in daily — a vault, a fleet of agents, and a weekly review loop, built on the canonical human-mind model.
 
-## Purpose
-Help humans build, maintain, and leverage a high-fidelity second brain that supports learning, reflection, decision-making, and creative output. It is "lived" — designed for daily human use while being fully agent-readable.
+This is the **lived layer** of the [Mind Intelligence Systems](https://github.com/frankxai/mind-intelligence-systems) ecosystem. Not a product you install for one job, not a research runtime — the thing one person runs every day. A vault you write into. Agents that read what you wrote and help you see it. A review loop that turns scattered notes into something you actually remember.
 
-## How People Experience It
-**Onboarding (7 days)**: Import existing notes → run mind-cartographer agent → build initial canon → first weekly review.
+---
 
-**Daily Experience**:
-- Morning: 01_Daily capture with active-recall-generator skill.
-- Throughout day: Source distillation (02_Sources → 03_Concepts).
-- Evening: Pattern logging in 04_Patterns, link to human-mind models.
+## Where this sits
 
-**Weekly**: Structured review using weekly-review skill → update 08_Reviews and personal canon.
+Agentic Mind OS depends on two repos upstream and inherits everything from them:
 
-**Key Vault Structure** (Markdown-first, frontmatter + JSON schemas):
-- 00_Start_Here.md
-- 01_Daily, 02_Sources, 03_Concepts, 04_Patterns, 05_Learning, 06_Projects, 07_Identity, 08_Reviews
+- **[mind-intelligence-systems](https://github.com/frankxai/mind-intelligence-systems)** — the canon. Naming doctrine, the human-mind model, the mesh that defines who depends on whom. When an agent here asks you about your *attention* or *belief* state, the vocabulary comes from there.
+- **[human-mind-intelligence-system](https://github.com/frankxai/human-mind-intelligence-system)** — the cognitive schemas and ontology. The engineered System that turns the model into something agents can reason over.
 
-UX is calm, local-first (works offline, Obsidian-compatible), with clear affordances for both humans and agents.
+This repo's contract with the mesh lives in [`mindpack.yaml`](mindpack.yaml). It **provides** three things to the ecosystem: vault-templates, personal-agents, and mind-skills.
 
-## How Agents Explore It
-Agents use:
-- vault-template structure
-- schemas/ (note.schema.json, pattern.schema.json, review.schema.json)
-- agents/ (mind-cartographer.agent.md, learning-architect.agent.md, pattern-analyst.agent.md, memory-governor.agent.md)
-- skills/ (daily-mind-capture, weekly-review, source-distillation, active-recall-generator, personal-canon-builder)
-- workflows/ (daily-capture.md, weekly-review.md, source-to-canon.md)
+```
+mind-intelligence-systems        (canon: names · models · mesh)
+        │
+        ▼
+human-mind-intelligence-system   (cognitive: schemas · ontology)
+        │
+        ▼
+agentic-mind-os  ◀── you are here (lived OS: vault · agents · review loop)
+        │
+        ▼
+starlight-mind-os-pro            (premium distribution)
+```
 
-**Example Prompt**:
-"As memory-governor + pattern-analyst, using human-mind models (memory.md, belief.md, metacognition.md), review last 7 days of captures. Identify recurring patterns in motivation and decision-making. Output structured review using review.schema.json. Suggest updates to personal canon."
+---
 
-Navigation: Start at 00_Start_Here.md → .codex/tasks.md → follow AGENTS.md and SKILL.md.
+## Quick map
 
-## Usefulness
-- **Humans**: Dramatically improves retention, self-awareness, and creative output. Builds "personal textbook" that compounds over years.
-- **Agents**: Fully structured environment enables reliable long-running personal intelligence agents.
-- **Integrations**: Feeds directly into Research Intelligence Systems (e.g., distill sources into research packs). Uses shared human-mind models for grounding.
-- **Latest Best Tech**: Structured outputs (JSON Schema), ReAct-style agent loops, local-first with frontmatter, integration points for latest LLMs and tools.
+| Folder | What it is |
+|---|---|
+| [`vault-templates/`](vault-templates/) | The Obsidian-style local-first vault skeleton you copy and live in |
+| [`agents/`](agents/) | Personal agent cards — cartographer, reviewer, focus coach, recall builder |
+| [`skills/`](skills/) | Mind-skills your agent runtime auto-activates |
+| [`commands/`](commands/) | Command specs — `/review-week`, `/map-mind` |
+| [`mindpack.yaml`](mindpack.yaml) | The manifest the mesh references |
+| [`CANON.md`](CANON.md) | What this repo composes and what it declines |
+| [`MEMORY.md`](MEMORY.md) | Durable commitments, scope boundaries, what it composes from |
 
-See mindpack.yaml, AGENTS.md, HERMES.md, EXPERIENCE.md, AGENT_EXPLORATION.md, USEFULNESS.md, and workflows/.
+---
 
-This is the personal foundation for the entire swarm.
+## The 12 constructs
+
+Everything in the vault and every agent here speaks the same vocabulary — the 12 modules of the canonical human-mind model:
+
+`attention` · `memory` · `emotion` · `motivation` · `identity` · `learning` · `belief` · `behavior` · `consciousness` · `metacognition` · `decision-making` · `social-cognition`
+
+One vault note per construct lives in [`vault-templates/constructs/`](vault-templates/constructs/). They are the shared lenses every agent uses to read what you write.
+
+---
+
+## Quick start
+
+```bash
+# 1. Clone
+git clone https://github.com/frankxai/agentic-mind-os.git
+cd agentic-mind-os
+
+# 2. Copy the vault skeleton somewhere you live (not inside this repo)
+cp -r vault-templates ~/mind-vault
+#    Open ~/mind-vault as an Obsidian vault, or just edit the .md files.
+
+# 3. Install the agents + skills into your agent runtime
+#    Claude Code:  copy agents/ and skills/ into .claude/ (or ~/.claude/)
+#    Cursor/Cline/Codex: point your harness at agents/ and skills/
+cp -r agents skills ~/.claude/
+```
+
+That's it. Write a daily note. Run `/map-mind` when you want to see the shape of what you've written. Run `/review-week` on Sunday.
+
+See [`vault-templates/README.md`](vault-templates/README.md) for the vault setup in full.
+
+---
+
+## The loop
+
+**Daily** — open `daily/YYYY-MM-DD.md`, write what's on your mind, what you're attending to, what moved you, what you decided. Don't structure it. Just capture.
+
+**Weekly** — run `/review-week`. The `weekly-reviewer` agent reads the week's daily notes, consolidates them against the 12 constructs, and writes a `reviews/YYYY-Www.md` note: what recurred, what you learned, what to carry forward. This is the consolidation step — the thing that turns capture into memory.
+
+```
+capture (daily) ──▶ map (/map-mind) ──▶ consolidate (/review-week) ──▶ carry forward
+   ▲                                                                        │
+   └────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## The safety principle
+
+This OS **models** a mind. It never **diagnoses** one.
+
+Every agent here keeps a hard line between five steps, and never collapses them:
+
+```
+observation → interpretation → hypothesis → evidence → decision
+```
+
+An agent may say *"you mentioned feeling scattered in three notes this week"* (observation). It may offer *"that reads like attention load"* (interpretation, flagged as such). It will never say *"you have an attention disorder"* — that is clinical, diagnostic, and out of scope. No `-therapy`, no `-diagnosis`, no `-disorder`. If a note suggests crisis or clinical need, agents point to real human help, not a hypothesis. See [`CANON.md`](CANON.md) and each agent card's guardrail section.
+
+---
+
+## The Mind Intelligence ecosystem
+
+| Repo | Family | Role |
+|---|---|---|
+| [mind-intelligence-systems](https://github.com/frankxai/mind-intelligence-systems) | canon | naming · models · mesh |
+| [human-mind-intelligence-system](https://github.com/frankxai/human-mind-intelligence-system) | cognitive | schemas · ontology |
+| [agentic-mind-os](https://github.com/frankxai/agentic-mind-os) | lived OS | personal mind OS *(this repo)* |
+| [starlight-mind-os-pro](https://github.com/frankxai/starlight-mind-os-pro) | lived OS | premium distribution |
+| [awesome-mind-agent-skills](https://github.com/frankxai/awesome-mind-agent-skills) | discovery | the front door |
+| [mind-palace-agent-skills](https://github.com/frankxai/mind-palace-agent-skills) | memory palace | Blessing skills |
+| [frankx-mind-palace](https://github.com/frankxai/frankx-mind-palace) | memory palace | blessed work as data |
+
+---
+
+## License & attestation
+MIT — see [`LICENSE`](LICENSE).
+**Built on SIP.** Composes the [Starlight Intelligence Protocol](https://github.com/frankxai/Starlight-Intelligence-System). Per SIP § Sovereignty clause.
+Built by [Frank Riemer](https://frankx.ai). For builders, not consumers.
