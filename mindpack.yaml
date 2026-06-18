@@ -1,0 +1,122 @@
+# mindpack.yaml
+# The manifest the Mind Intelligence Systems mesh references for this repo.
+# Machine-readable contract: what this OS is, what it depends on, what it provides.
+# Canonical mesh: github.com/frankxai/mind-intelligence-systems/repo-mesh.yaml
+
+name: "agentic-mind-os"
+version: "0.1.0"
+family: "lived_os"
+role: "personal-os"
+status: "live"
+
+description: >
+  A personal, local-first mind OS run daily by one person — an Obsidian-style vault,
+  a fleet of personal agents, and a weekly consolidation review loop, built on the
+  canonical 12-module human-mind model.
+
+# What this OS sits on. Inherits naming, the human-mind model, and the mesh from canon;
+# inherits cognitive schemas and ontology from the engineered system below it.
+depends_on:
+  - "human-mind-intelligence-system"
+  - "mind-intelligence-systems"
+
+# What this OS provides back to the ecosystem.
+provides:
+  - "vault-templates"
+  - "personal-agents"
+  - "mind-skills"
+
+# The substrate the whole portfolio composes. This OS declines its own vertical canon
+# and carries the SIP attestation on generated artifacts. See CANON.md.
+substrate:
+  name: "Starlight Intelligence Protocol (SIP)"
+  repo: "Starlight-Intelligence-System"
+  attestation: "Built on SIP"
+
+# The shared vocabulary every vault note, agent, and skill speaks.
+# Sourced verbatim from mind-intelligence-systems/models/human-mind/.
+constructs:
+  - attention
+  - memory
+  - emotion
+  - motivation
+  - identity
+  - learning
+  - belief
+  - behavior
+  - consciousness
+  - metacognition
+  - decision-making
+  - social-cognition
+
+# --- vault-templates ---
+# The local-first vault skeleton the user copies and lives in.
+vault_templates:
+  path: "vault-templates/"
+  folders:
+    - daily        # one capture note per day
+    - weekly       # weekly planning + review notes
+    - constructs   # one note per cognitive module (the 12 above)
+    - reviews      # consolidation outputs from /review-week
+  representative_notes:
+    - "vault-templates/daily/_template.md"
+    - "vault-templates/weekly/_review-template.md"
+    - "vault-templates/constructs/attention.md"
+    - "vault-templates/constructs/memory.md"
+
+# --- personal-agents ---
+# Agent definition cards installed into the user's agent runtime.
+agents:
+  path: "agents/"
+  ships:
+    - id: "mind-cartographer"
+      file: "agents/mind-cartographer.md"
+      reads: ["daily/", "constructs/"]
+      writes: ["reviews/"]
+      primary_constructs: ["metacognition", "identity", "emotion"]
+    - id: "weekly-reviewer"
+      file: "agents/weekly-reviewer.md"
+      reads: ["daily/", "weekly/", "reviews/"]
+      writes: ["reviews/", "weekly/"]
+      primary_constructs: ["memory", "metacognition"]
+    - id: "focus-coach"
+      file: "agents/focus-coach.md"
+      reads: ["daily/", "constructs/attention.md"]
+      writes: ["daily/"]
+      primary_constructs: ["attention", "metacognition", "motivation"]
+    - id: "recall-builder"
+      file: "agents/recall-builder.md"
+      reads: ["daily/", "constructs/", "reviews/"]
+      writes: ["constructs/", "reviews/"]
+      primary_constructs: ["memory", "learning"]
+
+# --- mind-skills ---
+# Auto-activating skills the user's runtime loads from context.
+skills:
+  path: "skills/"
+  ships:
+    - id: "distill-to-atomic-notes"
+      file: "skills/distill-to-atomic-notes/SKILL.md"
+      primary_constructs: ["memory", "learning"]
+    - id: "active-recall-generator"
+      file: "skills/active-recall-generator/SKILL.md"
+      primary_constructs: ["memory", "learning"]
+    - id: "weekly-consolidation-review"
+      file: "skills/weekly-consolidation-review/SKILL.md"
+      primary_constructs: ["memory", "metacognition"]
+
+# --- commands ---
+commands:
+  path: "commands/"
+  ships:
+    - id: "review-week"
+      file: "commands/review-week.md"
+    - id: "map-mind"
+      file: "commands/map-mind.md"
+
+# The non-waivable rule. This OS models a mind; it never diagnoses one.
+safety:
+  principle: "model-not-diagnose"
+  pipeline: "observation -> interpretation -> hypothesis -> evidence -> decision"
+  prohibited: ["clinical-language", "diagnosis", "treatment", "disorder-labels"]
+  on_crisis: "point to real human help, never a hypothesis"
