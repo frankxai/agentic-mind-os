@@ -1,0 +1,44 @@
+# mindpack.yaml
+# Agentic Mind OS packaging manifest
+
+version: "0.1.0"
+name: "agentic-mind-os"
+type: "personal-os"
+description: "Local-first second brain and self-intelligence operating system"
+
+components:
+  - type: vault-template
+    path: vault-template/
+  - type: agent
+    paths:
+      - agents/mind-cartographer.agent.md
+      - agents/learning-architect.agent.md
+      - agents/pattern-analyst.agent.md
+      - agents/memory-governor.agent.md
+  - type: skill
+    paths:
+      - skills/daily-mind-capture/SKILL.md
+      - skills/weekly-review/SKILL.md
+      - skills/source-distillation/SKILL.md
+      - skills/active-recall-generator/SKILL.md
+      - skills/personal-canon-builder/SKILL.md
+  - type: workflow
+    paths:
+      - workflows/daily-capture.md
+      - workflows/weekly-review.md
+      - workflows/source-to-canon.md
+  - type: schema
+    paths:
+      - schemas/note.schema.json
+      - schemas/pattern.schema.json
+      - schemas/review.schema.json
+
+depends_on:
+  - mind-intelligence-systems
+  - research-intelligence-os
+
+provides:
+  - personal-vault-structure
+  - self-intelligence-agents
+  - mind-skills
+  - personal-canon-workflows

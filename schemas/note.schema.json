@@ -1,0 +1,11 @@
+{
+  "title": "Note Schema",
+  "type": "object",
+  "properties": {
+    "id": {"type": "string"},
+    "date": {"type": "string"},
+    "content": {"type": "string"},
+    "tags": {"type": "array"},
+    "linked_concepts": {"type": "array"}
+  }
+}
