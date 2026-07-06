@@ -23,8 +23,9 @@ into a decision and a frame.
 ## What it does
 
 1. Loads the `daily-priming-ritual` skill.
-2. Prints the morning sequence one prompt at a time. For each state prompt, the
-   follow-up is *what about that, and how does it feel* — the feeling is the anchor.
+2. Prints the morning sequence one prompt at a time. For each state prompt (1-7), the
+   cadence is answer → *what about that* → picture it → feel it and hold for a
+   breath. The felt state is the point; don't rush to the next prompt.
 3. In `--capture` mode: opens `daily/YYYY-MM-DD.md` (creating it from the template if
    needed), appends a `## Priming` block with your answers verbatim, and adds the
    touched constructs to the note's `constructs::` line.
