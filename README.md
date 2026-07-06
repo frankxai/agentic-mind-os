@@ -41,7 +41,7 @@ starlight-mind-os-pro            (premium distribution)
 | [`vault-templates/`](vault-templates/) | The Obsidian-style local-first vault skeleton you copy and live in |
 | [`agents/`](agents/) | Personal agent cards — cartographer, reviewer, focus coach, recall builder |
 | [`skills/`](skills/) | Mind-skills your agent runtime auto-activates |
-| [`commands/`](commands/) | Command specs — `/review-week`, `/map-mind` |
+| [`commands/`](commands/) | Command specs — `/review-week`, `/map-mind`, `/dawn`, `/dusk` |
 | [`mindpack.yaml`](mindpack.yaml) | The manifest the mesh references |
 | [`CANON.md`](CANON.md) | What this repo composes and what it declines |
 | [`MEMORY.md`](MEMORY.md) | Durable commitments, scope boundaries, what it composes from |
@@ -83,7 +83,7 @@ See [`vault-templates/README.md`](vault-templates/README.md) for the vault setup
 
 ## The loop
 
-**Daily** — open `daily/YYYY-MM-DD.md`, write what's on your mind, what you're attending to, what moved you, what you decided. Don't structure it. Just capture.
+**Daily** — open `daily/YYYY-MM-DD.md`, write what's on your mind, what you're attending to, what moved you, what you decided. Don't structure it. Just capture. Optionally bracket the day with `/dawn` (morning priming — set state, pick the day's few actions) and `/dusk` (evening reflection — what you gave, learned, where you moved); both can read aloud in a few minutes or capture into the daily note.
 
 **Weekly** — run `/review-week`. The `weekly-reviewer` agent reads the week's daily notes, consolidates them against the 12 constructs, and writes a `reviews/YYYY-Www.md` note: what recurred, what you learned, what to carry forward. This is the consolidation step — the thing that turns capture into memory.
 
