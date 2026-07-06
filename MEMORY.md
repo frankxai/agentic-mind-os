@@ -3,7 +3,7 @@
 > Durable state for this repo: what it is committed to, where its edges are, and what it
 > composes from. An agent entering this repo reads this before acting.
 
-**Version:** 0.1.0
+**Version:** 0.1.1
 
 ---
 
@@ -48,6 +48,7 @@ What this repo deliberately does **not** do. Naming these prevents drift.
 ## State
 
 - **v0.1.0** — Foundation. Vault skeleton (daily / weekly / constructs / reviews), 4 personal agents (cartographer, weekly-reviewer, focus-coach, recall-builder), 3 mind-skills (distill-to-atomic-notes, active-recall-generator, weekly-consolidation-review), 2 commands (`/review-week`, `/map-mind`). Manifest live in the mesh.
+- **v0.1.1** — Daily bracket. Added the `daily-priming-ritual` mind-skill and its `/dawn` + `/dusk` commands — a morning priming and evening reflection sequence that reads aloud for a human or captures into the daily note, construct-tagged, feeding `/review-week`. Priming pattern adapted from the Robbins / Freedom Mastery *Questions to Empower Your Day* lineage; reworded into the 12-construct vocabulary, credited, kept non-clinical (priming, never assessment).
 
 ### Next (not committed, just noted)
 - Per-construct review prompts in each `constructs/*.md` note.
