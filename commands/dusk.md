@@ -25,7 +25,7 @@ to [`/dawn`](dawn.md); together they bracket the day.
 2. Prints the evening sequence one prompt at a time.
 3. In `--capture` mode: appends a `## Reflection` block to `daily/YYYY-MM-DD.md`, and
    folds *what did I learn* / *best thing today* / *where did I make progress* into the
-   note's existing `Learned` / `What moved me` / `Decided · did` sections rather than
+   note's existing `Learned` / `What moved me` / `Decided / did` sections rather than
    duplicating. Tags touched constructs on the `constructs::` line.
 4. Surfaces prompt 8 (*where did I make progress*) as the hook for any external
    accountability you keep — it names the entry; it does not own the ledger.

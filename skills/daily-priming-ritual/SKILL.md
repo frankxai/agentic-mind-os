@@ -91,7 +91,7 @@ is enough; the ritual doesn't own that ledger, it just surfaces the entry.
 1. Open (or create from `vault-templates/daily/_template.md`) `daily/YYYY-MM-DD.md`.
 2. Morning → append a `## Priming` block. Evening → append a `## Reflection` block, and
    fold prompts 2/7/8 into the note's existing `Learned` / `What moved me` /
-   `Decided · did` sections rather than duplicating.
+   `Decided / did` sections rather than duplicating.
 3. Write answers verbatim. One line each is fine; blank is fine and is itself data.
 4. Add touched constructs to the note's `constructs::` line. Don't invent synonyms —
    only the 12 canonical names.
