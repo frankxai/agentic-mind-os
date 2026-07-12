@@ -118,7 +118,7 @@ An agent may say *"you mentioned feeling scattered in three notes this week"* (o
 | [agentic-mind-os](https://github.com/frankxai/agentic-mind-os) | lived OS | personal mind OS *(this repo)* |
 | [starlight-mind-os-pro](https://github.com/frankxai/starlight-mind-os-pro) | lived OS | premium distribution |
 | [awesome-mind-agent-skills](https://github.com/frankxai/awesome-mind-agent-skills) | discovery | the front door |
-| [mind-palace-agent-skills](https://github.com/frankxai/mind-palace-agent-skills) | memory palace | Blessing skills |
+| [mind-palace-agent-skills](https://github.com/frankxai/mind-palace-agent-skills) | memory palace | Blessing skills + method-of-loci suite |
 | [frankx-mind-palace](https://github.com/frankxai/frankx-mind-palace) | memory palace | blessed work as data |
 
 ---

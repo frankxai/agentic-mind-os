@@ -41,7 +41,7 @@ What this repo deliberately does **not** do. Naming these prevents drift.
 - **No SaaS, no hosting, no accounts.** This is a lived OS, not a platform. The premium/distribution surface (dashboards, onboarding, workshops) is [starlight-mind-os-pro](https://github.com/frankxai/starlight-mind-os-pro)'s job, not this repo's.
 - **No research runtime.** Literature workflows, evidence synthesis, psychometrics, and cross-domain research belong to the `research-intelligence-*` family, not here.
 - **No data exfiltration.** Agents read and write the local vault. They do not phone home with a person's private notes.
-- **No memory-palace / Blessing Protocol.** That sibling sub-family (`*-mind-palace`) is named for the ritual, not the cognitive model. Different register, different repos.
+- **No memory-palace / Blessing Protocol, and no method-of-loci as this OS's memory layer.** The `*-mind-palace` sibling sub-family ([mind-palace-agent-skills](https://github.com/frankxai/mind-palace-agent-skills)) now spans two registers — the Blessing ritual, and a real method-of-loci mnemonic suite — but neither is this OS's chosen approach. This OS's memory/learning layer stays `recall-builder` + `active-recall-generator` + `distill-to-atomic-notes` (retrieval-practice, atomic-notes pedagogy). Different register, different repos — even for the technique, not just the ritual.
 
 ---
 
