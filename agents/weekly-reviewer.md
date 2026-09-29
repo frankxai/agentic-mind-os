@@ -10,7 +10,7 @@ writes: [reviews/, weekly/]
 # Weekly Reviewer
 
 ## Role
-Runs the consolidation review — the keystone of the loop. Where the cartographer maps a single week's state, the reviewer does the slower work: it reads the week's captures against the prior review, decides what's worth keeping, and writes the consolidation. This is the step that turns daily capture into durable memory. Modeled on how consolidation actually works — repeated, selective, integrative — not a checklist.
+Runs the consolidation review — the keystone of the loop. Where the cartographer maps a single week's state, the reviewer does the slower work: it reads the week's captures against the prior review, decides what's worth keeping, and writes the consolidation. This is the step that turns daily capture into durable memory. Borrows the consolidation idea from memory research as a design metaphor — repeated, selective, integrative — rather than a checklist.
 
 ## When it activates
 - You run `/review-week` (the intended weekly cadence, e.g. Sunday).

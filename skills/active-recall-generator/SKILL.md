@@ -2,17 +2,17 @@
 name: active-recall-generator
 description: >
   Generate active-recall questions from atomic notes or consolidated learnings — questions
-  that force retrieval, not recognition — so captured material becomes durable memory.
+  that force retrieval, not recognition — so captured material is easier to retrieve later.
   Activates on "make recall questions", "quiz me on this", "turn this into flashcards",
   or when the recall-builder agent processes carry-forward learnings. Wraps retrieval
-  practice, the highest-leverage move in the learning construct. Mind-skill of agentic-mind-os.
+  practice (the testing effect listed in the learning construct). Mind-skill of agentic-mind-os.
 primary_constructs: [memory, learning]
 ---
 
 # Active Recall Generator
 
 ## What it does
-Converts notes into questions that make you *retrieve* an answer from memory rather than *recognize* it on a page. Retrieval practice is the single most reliable way to move something from fragile short-term encoding into durable long-term memory. Recognition ("does this look right?") feels easier and does almost nothing; this skill refuses to generate it.
+Converts notes into questions that make you *retrieve* an answer from memory rather than *recognize* it on a page. Retrieval practice (the testing effect; see `models/human-mind/learning.md` in the canon) is one of the better-supported ways to make learned material last. Recognition ("does this look right?") feels easier and is a weaker test of what you know; this skill does not generate it.
 
 ## When to use
 - After `distill-to-atomic-notes` — atomic notes make clean questions.

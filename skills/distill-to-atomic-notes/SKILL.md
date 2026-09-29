@@ -12,7 +12,7 @@ primary_constructs: [memory, learning]
 # Distill to Atomic Notes
 
 ## What it does
-Takes messy input and produces atomic notes: each one idea, self-contained, restated in the user's own words, and linked. Atomicity is what makes a note reusable — you can drop it into any future thought without dragging context along. Restating in your own words is the deep-encoding move; copying verbatim is shallow and decays.
+Takes messy input and produces atomic notes: each one idea, self-contained, restated in the user's own words, and linked. Atomicity is what makes a note reusable — you can drop it into any future thought without dragging context along. Restating in your own words is a deeper form of encoding than copying verbatim (levels of processing, listed under memory in the canon), and copied text is easier to forget.
 
 ## When to use
 - After a daily brain-dump that has three good ideas tangled in one paragraph.
