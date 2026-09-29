@@ -4,7 +4,7 @@
 # Canonical mesh: github.com/frankxai/mind-intelligence-systems/repo-mesh.yaml
 
 name: "agentic-mind-os"
-version: "0.1.0"
+version: "0.1.1"
 family: "lived_os"
 role: "personal-os"
 status: "live"
@@ -104,6 +104,9 @@ skills:
     - id: "weekly-consolidation-review"
       file: "skills/weekly-consolidation-review/SKILL.md"
       primary_constructs: ["memory", "metacognition"]
+    - id: "daily-priming-ritual"
+      file: "skills/daily-priming-ritual/SKILL.md"
+      primary_constructs: ["emotion", "motivation"]
 
 # --- commands ---
 commands:
@@ -113,6 +116,10 @@ commands:
       file: "commands/review-week.md"
     - id: "map-mind"
       file: "commands/map-mind.md"
+    - id: "dawn"
+      file: "commands/dawn.md"
+    - id: "dusk"
+      file: "commands/dusk.md"
 
 # The non-waivable rule. This OS models a mind; it never diagnoses one.
 safety:
