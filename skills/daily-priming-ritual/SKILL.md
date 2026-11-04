@@ -9,31 +9,31 @@ description: Runs the morning priming and evening reflection ritual — a fixed 
 
 Two short sequences that bracket the day. The morning sequence sets state and picks
 the day's few actions before the inbox does it for you. The evening sequence closes
-the loop — what you gave, what you learned, where you moved. This is old technology,
-not new (see Lineage below); this skill's only job is to wire it into the vault so
+the loop — what you gave, what you learned, where you moved. It is an existing practice
+pattern (see Lineage below); this skill's only job is to wire it into the vault so
 the answers become data the loop can consolidate, not breath that disappears.
 
 The ritual is priming, not assessment. It asks how you feel and what you appreciate.
 It never scores you, never reads a mood as a condition. See the guardrail below.
 
-## Why this works
+## The idea behind it
 
-Attention runs like a spotlight, not a floodlight: whatever you point it at first
-locks in what you keep noticing for hours after. Answer the morning questions on
-autopilot and the inbox picks your spotlight for you by 9am. Answer them deliberately
-and you set it yourself, before anything else competes for it. The evening sequence
-does the same job in reverse — what you deliberately look back at is what the week's
-memory keeps; what you skip past gets overwritten by tomorrow's noise.
+This is a practice pattern, not a tested intervention. This repo cites no study showing
+it changes mood, attention, or memory. The working idea: what you deliberately attend to
+at the start of the day is more likely to stay in view than what the inbox chooses for
+you, and what you deliberately look back on in the evening is more likely to be
+recalled at the weekly review (see `attention` and `memory` in the canon's human-mind
+model). Treat that as a hypothesis to check against your own notes.
 
-The mechanism is not the question text. It's three moves, in order, every time:
+The pattern is three moves, in order, every time:
 
 1. **Answer** the question specifically — not the first vague word, the actual detail.
 2. **Picture it** — the scene, not the category. ("My work" isn't a picture. The call
    with Sam this morning is.)
-3. **Feel it and hold it** for a breath before moving on. The felt state is the point.
-   The words just got you there.
+3. **Feel it and hold it** for a breath before moving on. The ritual is designed
+   around this beat; the words are how you get there.
 
-Skip step 3 and you've built a checklist. The checklist doesn't do anything.
+Skip step 3 and it becomes a checklist, which is a different practice.
 
 ## When it activates
 
@@ -138,6 +138,6 @@ The morning/evening priming pattern is adapted from Tony Robbins' priming practi
 the Freedom Mastery planner's *Questions to Empower Your Day / Evening Power Questions*.
 Reworded into the OS's construct vocabulary and stripped of language this OS doesn't
 use (energy/vibration, prayer) in favor of secular equivalents (guidance, attention);
-credit to the originators for the sequence and the visualize-and-feel mechanism itself.
+credit to the originators for the sequence and the visualize-and-feel technique itself.
 
 Built on SIP.

@@ -12,7 +12,7 @@ primary_constructs: [memory, metacognition]
 # Weekly Consolidation Review
 
 ## What it does
-The step that turns a week of scattered capture into durable, integrated memory. Mirrors how consolidation actually works — selective (not everything is kept), repeated (built on last week, not from scratch), and integrative (links across days and constructs). It also runs a metacognition pass: not just *what* happened, but what you learned about how you attend, decide, and learn.
+The step that turns a week of scattered capture into durable, integrated memory. Borrows the consolidation idea from memory research as a design metaphor — selective (not everything is kept), repeated (built on last week, not from scratch), and integrative (links across days and constructs). It is a working method, not a model of your brain. It also runs a metacognition pass: not just *what* happened, but what you learned about how you attend, decide, and learn.
 
 ## When to use
 - The weekly cadence, e.g. Sunday. Triggered by `/review-week`.
